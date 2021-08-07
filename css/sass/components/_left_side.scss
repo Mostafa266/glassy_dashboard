@@ -1,0 +1,38 @@
+.left-side{
+    overflow: auto !important;
+   
+    padding: 1.5rem;
+    border-right: 1px solid $border-color;
+    flex-basis: 15rem;
+    height: 100%;
+    .side-wrapper{
+        .side-title{
+            color: $inactive-color;
+            margin-bottom: 1rem;
+        }
+        .side-menu{
+            display: flex;
+            flex-direction: column;
+            white-space: nowrap;
+            a{
+                text-decoration: none;
+                color: $theme-color;
+                text-transform: capitalize;
+                padding: 0.5rem 0.8rem;
+                font-weight: 400;
+                font-size: 0.8rem;
+                @include flex(flex,center,center);
+                justify-content: flex-start;
+                border-radius: 0.4rem;
+                font-size: 0.9rem;
+                svg{
+                    width:1rem;
+                    margin-right: 1rem;
+                }
+                &:hover{
+                    background-color: $hover-menu-bg;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,145 @@
+header {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    height: 3.625rem;
+    width: 100%;
+    border-bottom: 1px solid $border-color;
+    padding: 0 30px;
+    white-space: nowrap;
+
+    .menu-circles {
+        position: relative;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        flex-shrink: 0;
+        background-color: #f96057;
+        cursor: pointer;
+        margin-right: 12.188rem;
+        box-shadow: 24px 0px 0px 0px #f8ce52, 48px 0px 0px 0px #5fcf65;
+    }
+    .menu {
+        @include flex(flex, center, center);
+        a {
+            text-transform: capitalize;
+            padding: 1rem 1.275rem;
+            color: $inactive-color;
+            text-decoration: none;
+
+            &:hover {
+                border-bottom: 1px solid $theme-color;
+                color: white;
+            }
+
+            &.active {
+                color: white;
+                border-bottom: 1px solid $theme-color;
+            }
+        }
+
+    }
+
+    .search-bar {
+        height: 2.5rem;
+        display: flex;
+        width: 100%;
+        position: relative;
+        max-width: 400px;
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+        border-radius: 4px;
+
+        svg {
+            position: absolute;
+            width: 1.3rem;
+            stroke: $inactive-color;
+            margin: 0 0.6rem;
+        }
+
+        input {
+            width: 100%;
+            height: 100%;
+            background-color: $search-bg;
+            box-shadow: none;
+            border: none;
+            border-radius: 0.4rem;
+            padding: 0 1.4rem 0 3rem;
+            color: $inactive-color;
+            font-family: $body-font;
+        }
+    }
+
+    .profile {
+        flex-shrink: 0;
+        padding: 0 1rem 0 2.5rem;
+        @include flex(flex, center, center);
+        padding: 0 1rem 0 2.8rem;
+
+        .notifications {
+            color: white;
+            position: relative;
+            margin: 0.3rem;
+
+            padding: 0.4rem;
+            transition: all 0.2s ease-in-out;
+            border-radius: 50%;
+            @include flex(flex, center, center);
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.31);
+
+            }
+
+            span {
+                position: absolute;
+                width: 1rem;
+                height: 1rem;
+                background: #3a6df0;
+                border-radius: 50%;
+                font-size: 10px;
+                top: 0.2rem;
+                right: 0.2rem;
+                @include flex(flex, center, center);
+            }
+
+            svg {
+                width: 1.5rem;
+            }
+        }
+        .sky{
+            color: white;
+            position: relative;
+            padding: 0.4rem;
+            margin: 0.3rem;
+
+            transition: all 0.2s ease-in-out;
+            border-radius: 50%;
+            @include flex(flex, center, center);
+            cursor: pointer;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.31);
+            }
+            svg {
+                width: 1.5rem;
+            }
+           
+        }
+        .user{
+            width: 1.5rem;
+            margin: 0.3rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.31);
+            }
+        }
+    }
+}

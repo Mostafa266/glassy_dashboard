@@ -1,0 +1,47 @@
+.free-trial-wrapper{
+    @include flex(flex,space-between,center);
+    width: 100%;
+    background-image: url(https://www.transparenttextures.com/patterns/cubes.png), linear-gradient(to right top, #cf4af3, #e73bd7, #f631bc, #fd31a2, #ff3a8b, #ff4b78, #ff5e68, #ff705c, #ff8c51, #ffaa49, #ffc848, #ffe652);
+    border-radius: 14px;
+    padding: 1rem 2.5rem;
+    &--context{
+        max-width: 21.875rem;
+    }
+    .content-title{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        text-transform: capitalize;
+        svg{
+            width: 2rem;
+            margin-right: 1rem;
+        }
+    }
+    .content-text{
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            margin-top: 16px;
+            line-height: 1.7em;
+            color: #ebecec;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .content-img{
+      img{
+        width: 186px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        margin-top: -25px;
+        -o-object-position: center;
+        object-position: center;
+      }
+    }
+  
+
+}

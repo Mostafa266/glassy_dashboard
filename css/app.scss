@@ -1,0 +1,32 @@
+// START import all helpers components
+@import './sass/helpers/variables';
+@import './sass/helpers/common';
+@import './sass/helpers/mixins';
+// END import all helpers components
+
+// Start import buttons
+@import './sass/components/btns/primary_btn';
+
+// END import buttons
+
+
+// START import all Standalone components
+@import './sass/components/left_side';
+@import './sass/components/main_header';
+@import './sass/components/free-trial-wrapper';
+@import './sass/components/installed-apps';
+
+// END import all Standalone components
+
+
+// START import all layout components
+@import './sass/layout/body';
+@import './sass/layout/header';
+// END import all layout components
+
+
+
+// START import all pages
+@import './sass/pages/home';
+@import './sass/pages/second';
+// END import all pages

@@ -1,0 +1,19 @@
+body{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    padding: 0;
+    font-family: $body-font;
+    margin: 0;
+}
+.bg{
+    width: 100vw;
+    height: 100vh;
+    background: url(../imgs/bg_2.jpg)no-repeat center center;
+    position: fixed;
+    background-size: cover;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
